@@ -1,9 +1,13 @@
 'use client';
 
 import { cx } from 'class-variance-authority';
+import dynamic from 'next/dynamic';
 import { useRef } from 'react';
-import Iframe from '~/app/components/common/Iframe';
 import { useIntersectionObserver } from '~/app/utils/hooks';
+
+const Iframe = dynamic(() => import('~/app/components/common/Iframe'), {
+	ssr: false
+});
 
 const IFramesWrapper = () => {
 	const iframeContainerRef1 = useRef<HTMLDivElement>(null);
