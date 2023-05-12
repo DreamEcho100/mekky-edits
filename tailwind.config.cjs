@@ -1,7 +1,11 @@
-// import { Config } from 'tailwindcss';
+// import { type Config } from 'tailwindcss';
 
-const config = {
-	content: ['./src/**/*.{js,ts,jsx,tsx}'],
+export default config = {
+	content: [
+		'./app/**/*.{js,ts,jsx,tsx,mdx}',
+		'./pages/**/*.{js,ts,jsx,tsx,mdx}',
+		'./components/**/*.{js,ts,jsx,tsx,mdx}'
+	],
 	darkMode: 'class',
 	theme: {
 		screens: {
@@ -78,5 +82,3 @@ const config = {
 		}
 	}
 }; // satisfies Config;
-
-export default config;
