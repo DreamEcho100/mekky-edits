@@ -2,26 +2,129 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+:root {
+	/* Sizes */
+	--main-max-w: 1400px;
+}
+
+body,
+html {
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	color-scheme: dark;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(var(--clr-base-primary-500) / 1);
+	color: rgba(var(--clr-base-secondary-500) / 1);
+	scroll-behavior: smooth;
+	font-family: var(--font-roboto);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.logo {
+	font-family: var(--font-montserrat-alternates);
+}
+
+#__next {
+	width: 100%;
+	height: 100%;
+}
+
+button {
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+	font-size: inherit;
+}
+
+a {
+	color: inherit;
+}
+
+a,
+button {
+	text-transform: inherit;
+}
+
+img {
+	max-width: 100%;
+}
+
+fieldset {
+	min-width: auto;
+}
+
+@layer base {
+	/* https://www.w3schools.com/howto/howto_css_responsive_iframes.asp */
+	.iframe-container.aspect-ratio-16-9 {
+		padding-top: 56.25%;
+	}
+	.iframe-container.aspect-ratio-4-3 {
+		padding-top: 75%;
+	}
+	.iframe-container.aspect-ratio-3-2 {
+		padding-top: 66.66%;
+	}
+	.iframe-container.aspect-ratio-8-5 {
+		padding-top: 62.5%;
+	}
+	.iframe-container.aspect-ratio-1-1 {
+		padding-top: 100%;
+	}
+	/*  */
+	.perspective-animation {
+		perspective: 0;
+		transform-style: preserve-3d;
+		animation: perspective-animation 1s linear;
+	}
+	@keyframes perspective-animation {
+		100% {
+			perspective: 9999px;
+		}
+	}
+}
+
+.main {
+	width: 530px;
+}
+
+.left,
+.right {
+	width: 40%;
+	height: 12ex;
+	background-color: lightgray;
+}
+
+.left {
+	shape-outside: polygon(0 0, 100% 100%, 0 100%);
+	float: left;
+	clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+p {
+	display: inline;
+	text-align: center;
 }
