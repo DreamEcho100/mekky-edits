@@ -12,13 +12,13 @@ const HomeAboutSection = () => {
 			)}
 		>
 			<div className='absolute inset-0 bg-black/80' />
-			<InnerSectionContainer className='flex justify-center'>
+			<InnerSectionContainer className='flex flex-col items-center justify-center md:items-start'>
 				<h2 className='text-5xl font-semibold capitalize text-white/80'>
 					about me
 				</h2>
 				<Wrapper>
 					<div className='absolute inset-[15%] flex items-center justify-self-center text-center'>
-						<p className='text-3xl'>
+						<p className='text-2xl md:text-3xl'>
 							A video editor passionate about brining creative ideas to life.
 						</p>
 					</div>

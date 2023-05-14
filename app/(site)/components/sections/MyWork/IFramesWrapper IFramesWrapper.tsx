@@ -24,7 +24,7 @@ const IFramesWrapper = () => {
 	);
 
 	return (
-		<div className='flex gap-8'>
+		<div className='flex flex-wrap sm:flex-nowrap  gap-8'>
 			<Iframe
 				ref={iframeContainerRef1}
 				containerProps={{

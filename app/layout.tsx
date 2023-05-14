@@ -32,7 +32,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
 					</div>
 				</header>
 				<main className='flex flex-col justify-start'>{children}</main>
-				<footer className='flex justify-between gap-1 bg-neutral-900 px-8 py-16 text-white'>
+				<footer className='flex flex-col justify-center items-center sm:items-start sm:flex-row sm:justify-between gap-x-2 gap-y-4 bg-neutral-900 px-8 py-12 text-white'>
 					<div className='flex items-center gap-2'>
 						<Logo /> &#124;
 						<a
