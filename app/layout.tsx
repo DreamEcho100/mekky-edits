@@ -4,17 +4,14 @@ import '~/app/globals.css';
 import { robotoFont, montserratAlternatesFont } from '~/app/utils/fonts';
 import { getCopyRightDate } from './utils';
 import { BsInstagram } from 'react-icons/bs';
+import { type PropsWithChildren } from 'react';
 
 export const metadata = {
 	title: 'Mekky Edits',
 	description: 'A video editor passionate about brining creative ideas to life.'
 };
 
-export default function RootLayout({
-	children
-}: {
-	children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: PropsWithChildren) {
 	return (
 		<html lang='en'>
 			<body>
