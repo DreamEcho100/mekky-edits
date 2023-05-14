@@ -46,6 +46,7 @@ const IFramesWrapper = () => {
 						'transition-all duration-500 delay-100'
 					)
 				}}
+				title='vimeo-player'
 				src='https://player.vimeo.com/video/822643020?h=f837ecca64'
 				width={640}
 				height={680}
