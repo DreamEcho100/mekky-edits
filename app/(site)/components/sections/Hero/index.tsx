@@ -6,7 +6,7 @@ const HomeHeroSection = () => {
 		<section
 			id='hero'
 			className={cx(
-				'relative isolate h-screen max-h-[80rem] custom-section-height-semi-md:h-auto',
+				'overflow-x-hidden relative isolate h-screen max-h-[80rem] custom-section-height-semi-md:h-auto',
 				'bg-[url(/images/wahid-khene-iKdQCIiSMlQ-unsplash.webp)] bg-cover bg-fixed bg-center bg-no-repeat'
 			)}
 		>

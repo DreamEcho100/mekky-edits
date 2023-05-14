@@ -7,7 +7,7 @@ const HomeMyWorkSection = () => {
 		<section
 			id='my-work'
 			className={cx(
-				'relative isolate',
+				'overflow-x-hidden relative isolate',
 				'bg-[url(/images/aleksandra-boguslawska-MS7KD9Ti7FQ-unsplash.webp)] bg-cover bg-fixed bg-center bg-no-repeat'
 			)}
 		>
