@@ -45,7 +45,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
 							<BsInstagram />
 						</a>
 					</div>
-					<small>
+					<small className='text-center sm:text-align-center'>
 						&copy; {getCopyRightDate()} &#124; All rights reserved &#124;
 						Created by{' '}
 						<a

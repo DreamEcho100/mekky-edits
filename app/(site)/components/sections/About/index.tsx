@@ -13,7 +13,7 @@ const HomeAboutSection = () => {
 		>
 			<div className='absolute inset-0 bg-black/80' />
 			<InnerSectionContainer className='flex flex-col items-center justify-center md:items-start'>
-				<h2 className='text-5xl font-semibold capitalize text-white/80'>
+				<h2 className='text-5xl font-semibold capitalize text-white/80 text-center sm:text-align-center'>
 					about me
 				</h2>
 				<Wrapper>

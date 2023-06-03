@@ -78,6 +78,11 @@ fieldset {
 }
 
 @layer base {
+	.text-align-center {
+		text-align: center;
+	}
+
+	/*  */
 	/* https://www.w3schools.com/howto/howto_css_responsive_iframes.asp */
 	.iframe-container.aspect-ratio-16-9 {
 		padding-top: 56.25%;

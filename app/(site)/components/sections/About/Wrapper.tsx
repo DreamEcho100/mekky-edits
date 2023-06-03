@@ -23,7 +23,7 @@ const Wrapper = ({ children }: PropsWithChildren) => {
 		<div
 			ref={textContainerRef}
 			className={cx(
-				'relative md:ml-auto aspect-square w-96 h-96 max-w-full rounded-full bg-white/70',
+				'relative md:ml-auto aspect-square w-96 h-96 max-w-full sm:rounded-full bg-white/70',
 				'transition-all delay-100 duration-500',
 				'scale-0 opacity-0'
 			)}
